@@ -1,0 +1,6 @@
+http://*:80 {
+  rewrite {
+    to {path} {path}/ /
+  }
+  root /srv
+}
