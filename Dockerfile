@@ -19,3 +19,6 @@ EXPOSE 80 443 9180
 WORKDIR /srv
 
 COPY Caddyfile /etc/Caddyfile
+
+ENTRYPOINT ["/usr/bin/caddy"]
+CMD ["--conf", "/etc/Caddyfile", "--log", "stdout"]
