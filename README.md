@@ -1,0 +1,1 @@
+# Caddy Docker image definition
